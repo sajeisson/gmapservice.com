@@ -1,0 +1,92 @@
+/* estilos.css */
+
+/* Elimina el margen y padding del body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Estilos para el navbar */
+.bsb-navbar {
+  background-color: transparent !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* Estilos para la sección */
+#inicio {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.396);
+  z-index: 1;
+}
+
+.container.position-relative {
+  z-index: 2;
+}
+
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.074);
+  /* Sombra sutil */
+
+}
+
+.navbar-brand img {
+  width: 190px;
+  /* Ajustar el tamaño de la imagen */
+  height: 40px;
+}
+
+h2, p, h4 {
+  z-index: 2;
+  /* Asegúrate que el texto esté encima de la capa oscura */
+}
+
+/* Estilo para cambiar el color al hacer hover en los enlaces del menú */
+.nav-link:hover {
+  background-color: #05111e;
+  /* Azul bootstrap */
+  border-radius: 15px;
+}
+
+/* Espaciado adicional en el contenedor principal (arriba y abajo) */
+.container.position-relative {
+  margin-bottom: 50px;
+  /* Ajuste del margen inferior */
+  border-radius: 15px;
+}
+
+/* Fondo detrás de los bordes redondeados */
+section {
+  background-color: white;
+  /* Asegura que el fondo detrás del borde sea blanco */
+}
+
+/* Offcanvas oscuro */
+.offcanvas {
+  background-color: #343a40;
+  /* Fondo oscuro para el menú */
+  color: white;
+}
+
+/* Links en modo oscuro */
+.offcanvas-body .nav-link {
+  color: white !important;
+  /* Color blanco para los enlaces */
+}
+
+.offcanvas-body .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Resaltar enlaces al pasar el cursor */
+}
